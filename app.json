@@ -1,6 +1,6 @@
 {
-    "name": "Userbot",
-    "description": "Userbot Telegram",
+    "name": "python-aria-mirror-bot ",
+    "description": "Telegram mirror bot with python",
     "logo": "https://telegra.ph/file/e15e9ac9c5885b015e3ab.jpg",
     "keywords": [
       "telegram",
@@ -8,9 +8,9 @@
       "aria",
       "python"
     ],
-    "repository": "https://github.com/lukireboy/python-aria-mirror-bot/tree/master",
-    "website": "https://github.com/lukireboy/python-aria-mirror-bot/tree/master,
-    "success_url": "hhttps://github.com/lukireboy/python-aria-mirror-bot/tree/master",
+    "repository": "https://github.com/lzzy12/python-aria-mirror-bot",
+    "website": "https://github.com/lzzy12/python-aria-mirror-bot",
+    "success_url": "https://github.com/lzzy12/python-aria-mirror-bot",
     "stack": "container",
     "env": {
       "BOT_TOKEN": {
