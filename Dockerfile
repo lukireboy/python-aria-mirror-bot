@@ -3,10 +3,14 @@ FROM ubuntu:20.04
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 RUN apt-get -qq update && \
-    DEBIAN_FRONTEND="noninteractive" apt-get -qq install -y tzdata aria2 git python3 python3-pip \
+    DEBIAN_FRONTEND="noninteractive" apt-get -qq install -y tzdata aria2 git python python3 python3-pip \
     locales python3-lxml \
     curl pv jq ffmpeg \
-    p7zip-full p7zip-rar
+    p7zip-full p7zip-rar \
+    docker software-properties-common libcurl3-gnutls \
+    libcurl3-gnutls liberror-perl libxmuu1 \
+    xauth wget nano gnupg gnupg2 \ 
+    apt-transport-https ca-certificates software-properties-common
 COPY requirements.txt .
 COPY extract /usr/local/bin
 RUN chmod +x /usr/local/bin/extract
